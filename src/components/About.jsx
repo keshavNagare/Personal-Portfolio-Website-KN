@@ -26,10 +26,7 @@ const About = () => {
           </motion.div> */}
 
         <div className="desc mt-[2rem] w-[100%] flex flex-col gap-[25px] sm:px-[25px] lg:m-[0] xl:m-[0]">
-        <motion.div
-            variants={slideIn("up", "tween", 0.2, 1)}
-            className="xl:flex-1 xl:h-auto "
-          >
+        
           <p className="text-justify font-[monospace] text-[18px] lg:text-[21px]">
             I'm a Self-motivated information technology engineer with excellent
             problem- solving skills and ability to perform well in a team. I am
@@ -42,30 +39,22 @@ const About = () => {
           {/* <button className="btnsize mt-[2rem] flex justify-center items-center lg:block ">
             Certificates
           </button> */}
-          </motion.div>
         </div>
 
         <div className=" flex items-center justify-center sm:flex lg:flex-row justify-center">
-        <motion.div
-            variants={slideIn("right", "tween", 0.2, 1)}
-            className="flex h-[100%] items-center justify-center xl:flex-1 xl:h-[100%] xs:mb-[8px]"
-          >
+   
           <div className="kimg h-[100%]">
           <img  className="h-[100%]" src={KMNImage} alt="" />
-          </div></motion.div>
+          </div>
         </div>
       </div>
 
-      <motion.div
-            variants={slideIn("left", "tween", 0.2, 1)}
-            className="flex h-[auto] sm:ml-[45px] ml-[0]  mt-[2rem] xl:mt-[0] xl:flex-1 xl:h-auto md:h-[fit-content] h-[350px] xs:mb-[8px]"
-          >
+
       <div className="cerbtn ">
         <button className="btnsize flex justify-center items-center block ">
           Certificates
         </button>
       </div>
-        </motion.div>
     </div>
     </div>
   );

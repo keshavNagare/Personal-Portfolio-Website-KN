@@ -66,8 +66,8 @@ const Contact = () => {
   return (
     <><div className="text-center md:py-[25px]"><p className={`${styles.sectionHeadText}`}>Contact</p> </div>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overlflow-hidden'>
-      <motion.div 
-      variants={slideIn('left',"tween",0.2,1)}
+      <div 
+      variants={slideIn("up", "spring", 0.2, 1.2)}
       className="flex-[0.75] bg-bblack backdrop-blur-[2px] p-8 border-[white] rounded-2xl">
         
         <p className={styles.sectionSubText}>Get In Touch</p>
@@ -120,14 +120,11 @@ const Contact = () => {
           </button>
         </form>
 
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
+      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
-      </motion.div>
+      </div>
       
     </div></>
   )

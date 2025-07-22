@@ -26,8 +26,7 @@ const Skills = () => {
 
 <div className='flex flex-col xl:flex-row gap-10 overflow-hidden'>
 
-<motion.div 
-  variants={slideIn('left',"tween",0.2,1)}
+<div 
   className="xl:flex-1 xl:h-auto md:h-[500px] h-[350px]" 
 >
   <div className="h-full"> 
@@ -35,11 +34,10 @@ const Skills = () => {
       <ComputersCanvas />
     </div>
   </div>
-</motion.div>
+</div>
 
 
-<motion.div
-variants={slideIn("right", "tween", 0.2, 1)}
+<div
   className='xl:flex-1 xl:h-auto md:h-[550px] xs:mt-4 md:h-[350px]'
 >
 <div className="flex flex-wrap justify-center gap-6 mt-6">
@@ -104,7 +102,7 @@ variants={slideIn("right", "tween", 0.2, 1)}
           </div>
         </div>
         </div>
-</motion.div>
+</div>
 
 </div> 
 </>
