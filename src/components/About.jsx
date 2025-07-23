@@ -50,7 +50,7 @@ const About = () => {
       </div>
 
 
-      <div className="cerbtn ">
+      <div className="cerbtn ml-[50px] mt-5 ml-1 md:mt-0">
         <button className="btnsize flex justify-center items-center block ">
           Certificates
         </button>

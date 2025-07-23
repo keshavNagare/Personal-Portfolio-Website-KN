@@ -12,9 +12,9 @@ import Email from '../assets/e1.png'
 const Hero = () => {
   return (
     
-    <section className="relative w-full mx-auto py-[60px] lg:py-[80px]   bg-bottom">
+    <section className="py-[1px] xs:relative w-full mx-auto xs:pb-[16px] pt-[60px] lg:py-[80px]   bg-bottom">
       <div class="flex justify-content-center align-items-center flex-col lg:flex-row flex-col p-[0px]  ">
-      <div className="prog max-w-[100%] top-[60px] md:top-[128px] px-[10px] lg:pl-[50px] flex justify-content-center align-items-center flex-col lg:flex-row flex-col p-[0px]">
+      <div className="prog max-w-[100%] pt-[1px] xs:pt-[1px] md:top-[128px] px-[10px] md:pt-[50px]  lg:pl-[50px] flex justify-content-center align-items-center flex-col lg:flex-row flex-col pt-[50px]">
         <div className="bgmain colbg">
           <img
             className="bouncing hidden lg:block"
@@ -27,7 +27,7 @@ const Hero = () => {
             src={YoungProg}
             alt="programmer"
         />
-        <div className="w-full xl:w-[60%] pl-[8%]">
+        <div className="pl-0 xs:w-full xl:w-[60%] sm:pl-[8%]">
           <h1 className={`${styles.heroHeadText} text-white flex flex-col `}>
             {" "}
             Hi , I'm{" "}
@@ -36,15 +36,15 @@ const Hero = () => {
           <p className={`${styles.sectionSubText}`}>Full stack Developer</p>
 
           <div className="resume mt-[28px]">
-            <div className="getin flex">
+            <div className="flex flex-col gap-2 sm:flex-row">
             
-              <button className="btnsize flex justify-center items-center"><FaRegFileLines className="mr-[2px]" size={20}/>Resume</button>
+              <button className=" border-[1px] rounded-[8px] p-[10px] xs:btnsize flex justify-center items-center"><FaRegFileLines className="mr-[2px]" size={20}/>Resume</button>
             
             <Link
                   className="font-NavTitle font-[400]"
                   to={`/contact`}
             >
-              <button className="btnsize bg-[#07bae2d9] hover:bg-[#01bde7b2]">Contact me</button>
+              <button className="w-full border-[1px] rounded-[8px] p-[10px] xs:btnsize resume bg-[#07bae2d9] hover:bg-[#01bde7b2]">Contact me</button>
             </Link>
 
             </div>
