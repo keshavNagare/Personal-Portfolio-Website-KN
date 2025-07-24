@@ -7,8 +7,8 @@ import KMNImage from '../assets/keshav_about.jpeg'
 
 const About = () => {
   return (
-    <div className="About pb-[60px]">
-      <div className="text-center pt-[25px] pb-[65px]">
+    <div className="About pb-[0px] sm:pb-[60px">
+      <div className="text-center pt-[60px] pb-[65px] xs:pt-[56px] md:pt-[82px]">
         <p className={`${styles.sectionHeadText}`}>About</p>
       </div>
 
@@ -50,7 +50,7 @@ const About = () => {
       </div>
 
 
-      <div className="cerbtn ml-[50px] mt-5 ml-1 md:mt-0">
+      <div className="cerbtn ml-[10px] xs:ml-[18px] mt-5 ml-1 md:mt-0 md:ml-[50px]">
         <button className="btnsize flex justify-center items-center block ">
           Certificates
         </button>

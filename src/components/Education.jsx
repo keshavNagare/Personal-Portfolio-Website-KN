@@ -11,7 +11,7 @@ import shala from "../assets/Ncamp.jpeg";
 const Education = () => {
   return (
     <div>
-      <div className="text-center text-center pt-[15px] pb-[45px] md:py-[25px]">
+      <div className="text-center text-center pt-[60px] pb-[65px] xs:pt-[56px]pb-[20px] md:pt-[82px]">
         <p className={`${styles.sectionHeadText}`}>Education</p>{" "}
       </div>
 

@@ -12,9 +12,9 @@ import Email from '../assets/e1.png'
 const Hero = () => {
   return (
     
-    <section className="py-[1px] pt-[4px] xs:relative w-full mx-auto xs:pb-[16px] pt-[60px] lg:py-[80px]   bg-bottom">
+    <section className="py-[1px] pt-[4px] xs:relative w-full mx-auto xs:pt-[16px] pt-[16px] lg:py-[80px]   bg-bottom">
       <div class="flex justify-content-center align-items-center flex-col lg:flex-row flex-col p-[0px]  ">
-      <div className="prog max-w-[100%] pt-[1px] xs:pt-[1px] md:top-[128px] px-[10px] md:pt-[50px]  lg:pl-[50px] flex justify-content-center align-items-center flex-col lg:flex-row flex-col pt-[50px]">
+      <div className="prog max-w-[100%] pt-0 pt-[1px] xs:pt-[1px] md:top-[128px] px-[10px] md:pt-[50px]  lg:pl-[50px] flex justify-content-center align-items-center flex-col lg:flex-row flex-col pt-[50px]">
         <div className="bgmain colbg">
           <img
             className="bouncing hidden lg:block"

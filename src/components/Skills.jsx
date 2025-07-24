@@ -22,7 +22,7 @@ import VSCODE from '../assets/vs.png' ;
 const Skills = () => {
   return (
 
- <> <div className="text-center md:py-[25px]"><p className={`${styles.sectionHeadText}`}>Skills</p> </div> 
+ <> <div className="text-center pt-[60px] xs:pt-[56px] md:pt-[82px]"><p className={`${styles.sectionHeadText}`}>Skills</p> </div> 
 
 <div className='flex flex-col xl:flex-row gap-10 overflow-hidden'>
 
@@ -38,9 +38,9 @@ const Skills = () => {
 
 
 <div
-  className='xl:flex-1 xl:h-auto md:h-[550px] xs:mt-4 md:h-[350px]'
+  className='xl:flex-1 xl:h-auto md:h-[400px] xs:mt-4 md:h-[350px] lg:h-[550px]'
 >
-<div className="flex flex-wrap justify-center gap-6 mt-6">
+<div className="h-[339px] lg:h-[550px] xs:h-[352px] sm:h-[420px] md:h-[400px] flex flex-wrap justify-center gap-6 mt-6">
     <div className="grid gap-[4px] grid-cols-4 justify-items-center align-content-center col-span-2 p-[20px] md:pl-[18px] relative top-[-141px] lg:top-[0px]">
           <div className="logo sm:p-[10px]">
             <img className="p-[8px]" src={HTML} alt="HTML" />

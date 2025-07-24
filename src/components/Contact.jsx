@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   return (
-    <><div className="text-center md:py-[25px]"><p className={`${styles.sectionHeadText}`}>Contact</p> </div>
+    <><div className="text-center pt-[60px] pb-[65px] xs:pt-[56px] pb-[20px] md:pt-[82px]"><p className={`${styles.sectionHeadText}`}>Contact</p> </div>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overlflow-hidden'>
       <div 
       variants={slideIn("up", "spring", 0.2, 1.2)}
