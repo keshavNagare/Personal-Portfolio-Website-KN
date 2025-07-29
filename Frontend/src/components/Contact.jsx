@@ -26,42 +26,27 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Keshav Nagare",
-          from_email: form.email,
-          to_email: "keshavnagare102@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+  
+    const response = await fetch("http://localhost:8000/api/saveContact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+  
+    const data = await response.json();
+    setLoading(false);
+  
+    if (data.success) {
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({ name: "", email: "", message: "" });
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
   };
+  
 
   return (
     <><div className="text-center pt-[60px] pb-[65px] xs:pt-[56px] pb-[20px] md:pt-[82px]"><p className={`${styles.sectionHeadText}`}>Contact</p> </div>
