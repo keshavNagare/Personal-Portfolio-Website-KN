@@ -30,7 +30,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
   
-    const response = await fetch("http://localhost:8000/api/saveContact", {
+    const response = await fetch("https://personal-portfolio-website-kn.onrender.com/api/saveContact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
