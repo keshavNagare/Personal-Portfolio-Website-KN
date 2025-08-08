@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -7,7 +8,7 @@ import KMNImage from "../assets/keshav_about.jpeg";
 
 const About = () => {
   return (
-    <div className="About pb-[0px] sm:pb-[60px">
+    <div className="About pb-[0px] sm:pb-[60px]">
       <div className="text-center pt-[60px] pb-[65px] xs:pt-[56px] md:pt-[82px]">
         <p className={`${styles.sectionHeadText}`}>About</p>
       </div>
@@ -49,9 +50,14 @@ const About = () => {
         </div>
 
         <div className="cerbtn ml-[10px] xs:ml-[18px] mt-5 ml-1 md:mt-0 md:ml-[50px]">
+        <Link
+                  className="font-NavTitle font-[400]"
+                  to={`/certificates`}
+            >
           <button className="btnsize flex justify-center items-center block ">
             Certificates
           </button>
+        </Link>
         </div>
       </div>
     </div>

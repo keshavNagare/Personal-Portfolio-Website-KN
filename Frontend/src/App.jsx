@@ -15,6 +15,7 @@ import Skills from "./components/Skills";
 import Education from "./components/Education";
 import ParticlesBg from "./components/ParticlesBg";
 import Home from "./components/Home";
+import Certificates from "./components/Certificates";
 const App = () => {
   return (
     <BrowserRouter>
@@ -39,6 +40,7 @@ const App = () => {
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path="/certificates" element={<Certificates />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/works" element={<Works />} />
         <Route path="/education" element={<Education />} />
