@@ -10,13 +10,13 @@ const Certificates = () => {
           title: "Full Stack Development Using React",
           issuer: "Sumago Infotech Pvt. Ltd. Pune",
           date: "Feb 2025",
-          fileId: "13cv5EIvFMZR1qRwrYb8osWIJrv81VhZ1",
+          fileId: "1_cs4-4IczgqikPtarsBM1Qt6p3oO7X0M",
         },
         {
           title: "Frontend101 - Enhanced Training Program",
           issuer: "Infrings Technologies Pvt. Ltd.",
           date: "Oct 2023",
-          fileId: "14ScAifEEBLzLnWl-H2ZJCzcoanAcr1UH", 
+          fileId: "1EmOeKUenotZ3AeIXG86MNRgCZAapIZYz", 
         },
       ];
 
