@@ -391,9 +391,27 @@
 
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 1rem; /* small gap between cards */
+  width: 100%;
+  margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on md+ screens */
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr); /* same 2 cards on large screens */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 
 .card {
   background:linear-gradient(60deg, #000000, #3d4147 40%, #0a0a0ae8 56%) ;
@@ -402,6 +420,7 @@
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   transition: transform 0.2s ease;
   border:1px solid #343030;
+  width: 100%;
   
 }
 
@@ -438,4 +457,31 @@
 
 .pdf-frame{
   padding:18px 0;
+}
+
+/* Add these new styles at the end of your file */
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #353535d9;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top-button:hover {
+  /* background-color: #01bde7b2; */
+  transform: scale(1.1);
 }

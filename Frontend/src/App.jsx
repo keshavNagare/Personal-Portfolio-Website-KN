@@ -16,6 +16,7 @@ import Education from "./components/Education";
 import ParticlesBg from "./components/ParticlesBg";
 import Home from "./components/Home";
 import Certificates from "./components/Certificates";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 const App = () => {
   return (
     <BrowserRouter>
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ScrollToTopButton /> 
     </BrowserRouter>
   );
 };
